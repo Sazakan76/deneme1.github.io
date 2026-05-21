@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>İlk Sitem</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #2196f3, #0d47a1);
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<title>Deneme Site</title>
 
-        .box {
-            background: white;
-            padding: 40px 60px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            text-align: center;
-        }
+<style>
 
-        .box h1 {
-            margin: 0;
-            color: #2196f3;
-            font-size: 32px;
-        }
-    </style>
+body{
+    margin:0;
+    padding:40px;
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+.bolum{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.fotolar{
+    width:600px;
+}
+
+.buyuk{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:10px;
+}
+
+.kucukler{
+    display:flex;
+    gap:10px;
+}
+
+.kucukler img{
+    width:33.3%;
+    height:120px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.yazi{
+    max-width:300px;
+}
+
+.yazi h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.yazi p{
+    color:#bbb;
+    line-height:1.6;
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="box">
-        <h1>Bu benim ilk sitem</h1>
+<div class="bolum">
+
+    <div class="fotolar">
+
+        <img src="1.jpg" class="buyuk">
+
+        <div class="kucukler">
+            <img src="2.jpg">
+            <img src="3.jpg">
+            <img src="4.jpg">
+        </div>
+
     </div>
+
+    <div class="yazi">
+        <h1>Deneme Fotoğrafları</h1>
+        <p>
+            BBC
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>
